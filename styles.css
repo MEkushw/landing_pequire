@@ -2872,7 +2872,7 @@ p.testi-sub {
 .testi-deck-stage {
     position: relative;
     width: 420px;
-    height: 300px;
+    height: 320px;
     margin-bottom: 36px;
     perspective: 1200px;
 }
@@ -2880,7 +2880,7 @@ p.testi-sub {
 .testi-depth-card {
     position: absolute;
     width: 390px;
-    height: 280px;
+    height: 300px;
     border-radius: 20px;
     left: 50%;
     top: 50%;
@@ -2924,7 +2924,7 @@ p.testi-sub {
 .testi-flip-wrapper {
     position: absolute;
     width: 400px;
-    height: 290px;
+    height: 310px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -2994,10 +2994,10 @@ p.testi-sub {
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    padding: 28px 30px 22px;
+    padding: 28px 30px 24px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 4px;
     box-shadow: 0 25px 80px rgba(0, 0, 0, 0.12), 0 8px 24px rgba(0, 0, 0, 0.06);
     position: relative;
     overflow: hidden;
@@ -3084,9 +3084,8 @@ p.testi-sub {
 }
 
 .testi-quote {
-    font-size: 24px;
-    line-height: 1.5;
-    flex: 1;
+    font-size: 22px;
+    line-height: 1.45;
     display: block;
     padding: 8px 0 4px;
     font-weight: 600;
@@ -3112,7 +3111,8 @@ p.testi-sub {
 
 .testi-card-divider {
     height: 1px;
-    margin: 6px 0;
+    margin: 10px 0;
+    margin-top: auto;
 }
 
 .testi-user-card .testi-card-divider {
@@ -4513,16 +4513,30 @@ html {
     .testi-flip-wrapper {
         width: 100%;
         max-width: 340px;
-        height: 260px;
+        height: 290px;
     }
 
     .testi-card-face {
-        padding: 16px;
+        padding: 22px 20px 20px;
     }
 
     .testi-depth-card {
         width: 90%;
-        height: 240px;
+        height: 270px;
+    }
+
+    .testi-quote {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .testi-star {
+        font-size: 18px;
+    }
+
+    .testi-badge {
+        font-size: 11px;
+        padding: 5px 14px;
     }
 
     .bento-main-grid,
@@ -4558,13 +4572,17 @@ html {
     .testi-deck-stage,
     .testi-flip-wrapper {
         width: 100%;
-        max-width: 280px;
+        max-width: 300px;
         height: 280px;
     }
 
     .testi-depth-card {
         width: 90%;
         height: 260px;
+    }
+
+    .testi-card-face {
+        padding: 20px 18px 18px;
     }
 
     .testi-content {
@@ -4577,15 +4595,44 @@ html {
 
     .testi-quote {
         font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .testi-star {
+        font-size: 16px;
+    }
+
+    .testi-badge {
+        font-size: 10px;
+        padding: 4px 12px;
+        letter-spacing: 0.8px;
     }
 
     .testi-avatar {
         width: 40px;
         height: 40px;
+        font-size: 13px;
     }
 
     .testi-author-name {
         font-size: 14px;
+    }
+
+    .testi-author-loc {
+        font-size: 12px;
+    }
+
+    .testi-rating-text {
+        font-size: 12px;
+    }
+
+    .testi-btn-row {
+        gap: 8px;
+    }
+
+    .testi-btn {
+        padding: 10px 20px;
+        font-size: 13px;
     }
 
     .footer-arc-wrap {
@@ -4599,5 +4646,58 @@ html {
 
     .app-phones-wrap {
         transform: scale(0.7) !important;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .testi-deck-stage,
+    .testi-flip-wrapper {
+        max-width: 270px;
+        height: 290px;
+    }
+
+    .testi-depth-card {
+        height: 270px;
+    }
+
+    .testi-card-face {
+        padding: 16px 14px 14px;
+    }
+
+    .testi-quote {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .testi-star {
+        font-size: 14px;
+    }
+
+    .testi-card-top {
+        gap: 4px;
+    }
+
+    .testi-badge {
+        padding: 4px 10px;
+        font-size: 9px;
+    }
+
+    .testi-rating-text {
+        font-size: 11px;
+    }
+
+    .testi-avatar {
+        width: 36px;
+        height: 36px;
+        font-size: 12px;
+    }
+
+    .testi-author-name {
+        font-size: 13px;
+    }
+
+    .testi-card-divider {
+        margin: 6px 0;
     }
 }
